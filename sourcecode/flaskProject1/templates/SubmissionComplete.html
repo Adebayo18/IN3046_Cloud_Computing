@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %}Bug Submission Complete{% endblock %}
+
+{% block content %}
+  <h1>Bug Submission Complete</h1>
+  <h2>Bug Details:</h2>
+  <p><strong>Bug ID:</strong> {{ bugIdNumber }}</p>
+  <p><strong>Priority:</strong> {{ bugClass }}</p>
+  <p><strong>Title:</strong> {{ bugTitle }}</p>
+  <p><strong>Description:</strong> {{ bugDesc }}</p>
+
+  <a href="{{ url_for('bugSubmissionPage') }}">Submit another bug</a>
+{% endblock %}
